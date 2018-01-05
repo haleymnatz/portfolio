@@ -156,6 +156,10 @@ td {
   width: 10%;
 }
 
+.project-icons a {
+  color: #fff;
+}
+
 .project-icons ul {
   align-items: center;
   display: flex;
@@ -163,11 +167,32 @@ td {
   height: 100%;
   justify-content: space-around;
   list-style-type: none;
+  margin: 0;
   padding: 0;
+}
+
+.logo-li {
+  width: 50%;
+  height: auto;
+}
+
+.logo-li.java {
+  width: 70%;
+}
+
+.logo-svg {
+  width: 100%;
 }
 
 .project-text {
   display: flex;
   flex-direction: column;
   width: 90%;
+}
+
+a.project-link {
+  display: block;
+  height: 100%;
+  text-decoration: none;
+  width: 100%;
 }
