@@ -1,3 +1,7 @@
+// function getNav(){
+//   $(".nav-placeholder").load('../html/nav.html');
+// }
+
 function openContact(){
   $('#contact-link').click(function(){
     $('main').load('../html/contact.html');
@@ -12,9 +16,20 @@ function openHome(){
 
 function openWork(){
   $('#work-link').click(function(){
-    $('main').load('../html/work.html');
+    $('main').load('../html/work.html', function(){
+      // alert("Success!");
+      // history.pushState({"html":response.html,"pageTitle":response.pageTitle}, '', 'work');
+    });
   });
 }
+
+// function getWork(){
+//   $('#work-link').click(function(){
+//     $.get('/html/work.html', function(data) {
+//
+//     });
+//   });
+// }
 
 function openAbout(){
   $('#about-link').click(function(){
@@ -23,6 +38,7 @@ function openAbout(){
 }
 
 $(function(){
+  // getNav();
   openContact();
   openHome();
   openWork();
