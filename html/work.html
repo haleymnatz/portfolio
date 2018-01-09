@@ -1,11 +1,9 @@
 <section id="work">
-  <h1>My Work</h1>
-
-  <table>
-    <tr>
+  <h1 class="section-heading">My Work</h1>
+  <div class="project-boxes">
 <!-- VEGME -->
-      <td>
-        <div class="project">
+    <div class="project-box">
+      <div class="project">
           <img src="../assets/images/vegme_screenshot.png"
                alt="Screenshot of Vegme app"
                class="project-photo"/>
@@ -27,125 +25,185 @@
             </div>
             <a href="http://vegme.herokuapp.com/" class="project-link">
               <div class="project-text">
-                <h3>VegMe</h3>
-                <p>
-                  A plant-based recipe search engine built using TDD and
-                  a third party API.
-                </p>
+                <h2>Accomplishments</h2>
+                <ul>
+                  <li>
+                    Edamam API Integration
+                  </li>
+                  <li>
+                    Data-transer object for JSON parsing
+                  </li>
+                  <li>
+                    Setup admin role \& hidden admin features
+                  </li>
+                  <li>
+                    Tests for implemented functionality
+                  </li>
+                </ul>
               </div>
             </a>
           </div>
         </div>
-      </td>
+      <div class="project-caption">
+        <h3>VegMe</h3>
+        <p>
+          A plant-based recipe search engine built using TDD and
+          a third party API.
+        </p>
+      </div>
+    </div>
+
 <!-- COUNTER THREAT -->
-      <td>
-        <div class="project">
-          <img src="../assets/images/vegme_screenshot.png"
-               alt="Screenshot of Counter Threat app"
-               class="project-photo" />
-          <div class="project-info">
-            <div class="project-icons">
+    <div class="project-box">
+      <div class="project">
+        <img src="../assets/images/placeholder.jpg"
+             alt="Screenshot of Counter Threat app"
+             class="project-photo" />
+        <div class="project-info">
+          <div class="project-icons">
+            <ul>
+              <li class="logo-li">
+                <object type="image/svg+xml"
+                  data="../assets/images/rails-svg.svg"
+                  class="logo-svg">
+                </object>
+              </li>
+              <li>
+                <a href="https://github.com/counterThreat/chess_app">
+                  <i class="fa fa-github fa-lg"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <a href="https://firehose-chess-app.herokuapp.com/" class="project-link">
+            <div class="project-text">
+              <h2>Accomplishments</h2>
               <ul>
-                <li class="logo-li">
-                  <object type="image/svg+xml"
-                    data="../assets/images/rails-svg.svg"
-                    class="logo-svg">
-                  </object>
+                <li>
+                  Logic to determine move obstruction
                 </li>
                 <li>
-                  <a href="https://github.com/counterThreat/chess_app">
-                    <i class="fa fa-github fa-lg"></i>
-                  </a>
+                  Logic for check, checkmate \& stalemate
+                </li>
+                <li>
+                  Pusher integration for realtime live updating
+                </li>
+                <li>
+                  Single-table inheritance for piece classes
+                </li>
+                <li>
+                  Logic for general Piece class as well as several specific pieces
+                </li>
+                <li>
+                  Tests for implemented functionality
                 </li>
               </ul>
             </div>
-            <a href="https://firehose-chess-app.herokuapp.com/" class="project-link">
-              <div class="project-text">
-                <h3>Counter Threat</h3>
-                <p>
-                  A fully-functional, live-updating chess game application built
-                  using TDD and Pusher.
-                </p>
-              </div>
-            </a>
-          </div>
+          </a>
         </div>
-      </td>
+      </div>
+      <div class="project-caption">
+        <h3>Counter Threat</h3>
+        <p>
+          A fully-functional, live-updating chess game application built
+          using TDD and Pusher.
+        </p>
+      </div>
+    </div>
 <!-- IFME -->
-      <td>
-        <div class="project">
-          <img src="../assets/images/ifme_screenshot.png"
-               alt="Screenshot of ifme app"
-               class="project-photo" />
-          <div class="project-info">
-            <div class="project-icons">
+    <div class="project-box">
+      <div class="project">
+        <img src="../assets/images/ifme_screenshot.png"
+             alt="Screenshot of ifme app"
+             class="project-photo" />
+        <div class="project-info">
+          <div class="project-icons">
+            <ul>
+              <li class="logo-li">
+                <object type="image/svg+xml"
+                  data="../assets/images/rails-svg.svg"
+                  class="logo-svg">
+                </object>
+              </li>
+              <li>
+                <a href="https://github.com/julianguyen/ifme">
+                  <i class="fa fa-github fa-lg"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <a href="https://www.if-me.org/" class="project-link">
+            <div class="project-text">
+              <h2>Accomplishments</h2>
               <ul>
-                <li class="logo-li">
-                  <object type="image/svg+xml"
-                    data="../assets/images/rails-svg.svg"
-                    class="logo-svg">
-                  </object>
+                <li>
+                  Custom devise_invitable solution to show the name
+                  of invitation sender in invitation email subject line
                 </li>
                 <li>
-                  <a href="https://github.com/julianguyen/ifme">
-                    <i class="fa fa-github fa-lg"></i>
-                  </a>
+                  Custom devise_invitable solution to accept a comma-separated
+                  list of email addresses to invite multiple people by email
+                </li>
+                <li>
+                  Tests for implemented functionality
                 </li>
               </ul>
             </div>
-            <a href="https://www.if-me.org/" class="project-link">
-              <div class="project-text">
-                <h3>ifme</h3>
-                <p>
-                  Open source app to share mental health experiences
-                  with loved ones.
-                </p>
-              </div>
-            </a>
-          </div>
+          </a>
         </div>
-      </td>
-    </tr>
-    <tr>
+      </div>
+      <div class="project-caption">
+        <h3>ifme</h3>
+        <p>
+          Open source app to share mental health experiences
+          with loved ones.
+        </p>
+      </div>
+    </div>
 <!-- HAPPYLIBS -->
-      <td>
-        <div class="project">
-          <img src="../assets/images/happylibs_screenshot.png"
-               alt="Screenshot of HappyLibs! app"
-               class="project-photo" />
-          <div class="project-info">
-            <div class="project-icons">
+    <div class="project-box">
+      <div class="project">
+        <img src="../assets/images/happylibs_screenshot.png"
+             alt="Screenshot of HappyLibs! app"
+             class="project-photo" />
+        <div class="project-info">
+          <div class="project-icons">
+            <ul>
+              <li class="logo-li java">
+                <object type="image/svg+xml"
+                  data="../assets/images/java.svg"
+                  class="logo-svg">
+                </object>
+              </li>
+              <li>
+                <a href="https://github.com/haleymnatz/madlib-emailer">
+                  <i class="fa fa-github fa-lg"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <a href="https://happylibs.herokuapp.com/" class="project-link">
+            <div class="project-text">
+              <h2>Accomplishments</h2>
               <ul>
-                <li class="logo-li java">
-                  <object type="image/svg+xml"
-                    data="../assets/images/java.svg"
-                    class="logo-svg">
-                  </object>
+                <li>
+                  First Java app built using Spring MVC, Tomcat, and Maven
                 </li>
                 <li>
-                  <a href="https://github.com/haleymnatz/madlib-emailer">
-                    <i class="fa fa-github fa-lg"></i>
-                  </a>
+                  String formatting to incorporate user inputs into instances
+                  of stories
                 </li>
               </ul>
             </div>
-            <a href="https://happylibs.herokuapp.com/" class="project-link">
-              <div class="project-text">
-                <h3>HappyLibs!</h3>
-                <p>
-                  A simple MadLibs&#x2122 replica built using Spring MVC and Maven.
-                </p>
-              </div>
-            </a>
-          </div>
+          </a>
         </div>
-      </td>
-      <td>
+      </div>
+      <div class="project-caption">
+        <h3>HappyLibs!</h3>
+        <p>
+          A simple MadLibs&#x2122 replica built using Spring MVC and Maven.
+        </p>
+      </div>
+    </div>
 
-      </td>
-      <td>
-
-      </td>
-    </tr>
-  </table>
 </section>

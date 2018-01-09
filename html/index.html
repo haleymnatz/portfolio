@@ -7,24 +7,24 @@
     <link href="../css/output.css" rel="stylesheet" type="text/css">
     <meta charset="utf-8">
 
-    <title>Haley Mnatzaganian</title>
+    <title>Haley Mnatzaganian | Software Engineer</title>
     <meta name="description" content="Super cool tagline goes here.">
   </head>
 
   <body>
     <nav class="nav">
       <ul class="nav-links">
-        <li><a rel="index" href="#" id="home-link">Home</a></li>
-        <li><a rel="work" href="#" id="work-link">My Work</a></li>
-        <li><a rel="about" href="#" id="about-link">About</a></li>
-        <li><a rel="contact" href="#" id="contact-link">Contact</a></li>
+        <li><a rel="index" href="#home" id="home-link">Home</a></li>
+        <li><a rel="work" href="#work" id="work-link">My Work</a></li>
+        <li><a rel="about" href="#about" id="about-link">About</a></li>
+        <li><a rel="contact" href="#contact" id="contact-link">Contact</a></li>
       </ul>
       <ul class="social-links">
-        <li><a rel="linkedin" href="https://www.linkedin.com/in/haleymnatzaganian/"><i class="fa fa-linkedin"></i></a></li>
-        <li><a rel="github" href="https://github.com/haleymnatz"><i class="fa fa-github"></i></a></li>
-        <li><a rel="medium" href="https://medium.com/@haleymnatz"><i class="fa fa-medium"></i></a></li>
-        <li><a rel="twitter" href="https://twitter.com/haleymnatz"><i class="fa fa-twitter"></i></a></li>
-        <li><a rel="googleplus" href="https://plus.google.com/u/0/103955336511157679504"><i class="fa fa-google-plus"></i></a></li>
+        <li><a rel="linkedin" href="https://www.linkedin.com/in/haleymnatzaganian/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+        <li><a rel="github" href="https://github.com/haleymnatz" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li><a rel="medium" href="https://medium.com/@haleymnatz" target="_blank"><i class="fa fa-medium"></i></a></li>
+        <li><a rel="twitter" href="https://twitter.com/haleymnatz" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        <li><a rel="googleplus" href="https://plus.google.com/u/0/103955336511157679504" target="_blank"><i class="fa fa-google-plus"></i></a></li>
       </ul>
     </nav>
 
@@ -47,7 +47,303 @@
           <img src="../assets/images/self.jpg" alt="Photo of Haley Mnatzaganian"
             id="home-photo">
         </div>
-      </div>
+      </section>
+      <section id="work">
+        <h1 class="section-heading">My Work</h1>
+        <div class="project-boxes">
+          <!-- VEGME -->
+          <div class="project-box">
+            <div class="project">
+                <img src="../assets/images/vegme_screenshot.png"
+                     alt="Screenshot of Vegme app"
+                     class="project-photo"/>
+                <div class="project-info">
+                  <div class="project-icons">
+                    <ul>
+                      <li class="logo-li">
+                        <object type="image/svg+xml"
+                          data="../assets/images/rails-svg.svg"
+                          class="logo-svg">
+                        </object>
+                      </li>
+                      <li>
+                        <a href="https://github.com/space-jammers/vegme">
+                          <i class="fa fa-github fa-lg"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <a href="http://vegme.herokuapp.com/" class="project-link">
+                    <div class="project-text">
+                      <h2>Accomplishments</h2>
+                      <ul>
+                        <li>
+                          Edamam API Integration
+                        </li>
+                        <li>
+                          Data-transer object for JSON parsing
+                        </li>
+                        <li>
+                          Setup admin role \& hidden admin features
+                        </li>
+                        <li>
+                          Tests for implemented functionality
+                        </li>
+                      </ul>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            <div class="project-caption">
+              <h3>VegMe</h3>
+              <p>
+                A plant-based recipe search engine built using TDD and
+                a third party API.
+              </p>
+            </div>
+          </div>
+
+          <!-- COUNTER THREAT -->
+          <div class="project-box">
+            <div class="project">
+              <img src="../assets/images/placeholder.jpg"
+                   alt="Screenshot of Counter Threat app"
+                   class="project-photo" />
+              <div class="project-info">
+                <div class="project-icons">
+                  <ul>
+                    <li class="logo-li">
+                      <object type="image/svg+xml"
+                        data="../assets/images/rails-svg.svg"
+                        class="logo-svg">
+                      </object>
+                    </li>
+                    <li>
+                      <a href="https://github.com/counterThreat/chess_app">
+                        <i class="fa fa-github fa-lg"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <a href="https://firehose-chess-app.herokuapp.com/" class="project-link">
+                  <div class="project-text">
+                    <h2>Accomplishments</h2>
+                    <ul>
+                      <li>
+                        Logic to determine move obstruction
+                      </li>
+                      <li>
+                        Logic for check, checkmate \& stalemate
+                      </li>
+                      <li>
+                        Pusher integration for realtime live updating
+                      </li>
+                      <li>
+                        Single-table inheritance for piece classes
+                      </li>
+                      <li>
+                        Logic for general Piece class as well as several specific pieces
+                      </li>
+                      <li>
+                        Tests for implemented functionality
+                      </li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="project-caption">
+              <h3>Counter Threat</h3>
+              <p>
+                A fully-functional, live-updating chess game application built
+                using TDD and Pusher.
+              </p>
+            </div>
+          </div>
+          <!-- IFME -->
+          <div class="project-box">
+            <div class="project">
+              <img src="../assets/images/ifme_screenshot.png"
+                   alt="Screenshot of ifme app"
+                   class="project-photo" />
+              <div class="project-info">
+                <div class="project-icons">
+                  <ul>
+                    <li class="logo-li">
+                      <object type="image/svg+xml"
+                        data="../assets/images/rails-svg.svg"
+                        class="logo-svg">
+                      </object>
+                    </li>
+                    <li>
+                      <a href="https://github.com/julianguyen/ifme">
+                        <i class="fa fa-github fa-lg"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <a href="https://www.if-me.org/" class="project-link">
+                  <div class="project-text">
+                    <h2>Accomplishments</h2>
+                    <ul>
+                      <li>
+                        Custom devise_invitable solution to show the name
+                        of invitation sender in invitation email subject line
+                      </li>
+                      <li>
+                        Custom devise_invitable solution to accept a comma-separated
+                        list of email addresses to invite multiple people by email
+                      </li>
+                      <li>
+                        Tests for implemented functionality
+                      </li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="project-caption">
+              <h3>ifme</h3>
+              <p>
+                Open source app to share mental health experiences
+                with loved ones.
+              </p>
+            </div>
+          </div>
+          <!-- HAPPYLIBS -->
+          <div class="project-box">
+            <div class="project">
+              <img src="../assets/images/happylibs_screenshot.png"
+                   alt="Screenshot of HappyLibs! app"
+                   class="project-photo" />
+              <div class="project-info">
+                <div class="project-icons">
+                  <ul>
+                    <li class="logo-li java">
+                      <object type="image/svg+xml"
+                        data="../assets/images/java.svg"
+                        class="logo-svg">
+                      </object>
+                    </li>
+                    <li>
+                      <a href="https://github.com/haleymnatz/madlib-emailer">
+                        <i class="fa fa-github fa-lg"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <a href="https://happylibs.herokuapp.com/" class="project-link">
+                  <div class="project-text">
+                    <h2>Accomplishments</h2>
+                    <ul>
+                      <li>
+                        First Java app built using Spring MVC, Tomcat, and Maven
+                      </li>
+                      <li>
+                        String formatting to incorporate user inputs into instances
+                        of stories
+                      </li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="project-caption">
+              <h3>HappyLibs!</h3>
+              <p>
+                A simple MadLibs&#x2122 replica built using Spring MVC and Maven.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <h1 class="section-heading">About</h1>
+        <div class="container">
+          <div class="left-div">
+            <h2>Q&A With Yours Truly</h2>
+            <p class="question">
+              <b>Q: You have a degree in neuroscience? What does that have to do with software?</b><br /><br />
+              <b>A:</b> My devotion to finding a career where I could
+              serve others led to my pursuing a career in medicine
+              via a neuroscience degree. My education in a field that
+              was constantly changing and where questions rarely had
+              one clear answer cultivated my ability to think critically
+              and innovatively. As a developer, I use these skills to create
+              optimized solutions while keeping the customer in mind in
+              a field that is ever-evolving.
+            </p>
+            <p class="question">
+              <b>Q: What do you have to offer that other developers don't?</b><br /><br />
+              <b>A:</b>
+            </p>
+            <p class="question">
+              <b>Q: So, what's next?</b><br /><br />
+              <b>A:</b> I'm looking for a developer position where my
+              skills can be both fostered and challenged. I'd love to
+              work as a part of a team that values collaboration and
+              mutual encouragement. I strongly value work-life balance
+              and am looking for a company that shares that view.
+              Ultimately, I want to contribute to meaningful products
+              that make the world better.
+            </p>
+          </div>
+          <div class="right-div">
+            <div class="books">
+              <h3>Favorite Books of 2017</h3>
+              <ul>
+                <li>
+                  <a href="https://www.goodreads.com/book/show/18302455-the-circle">
+                    The Circle</a> by Dave Eggers
+                </li>
+                <li>
+                  <a href="https://www.goodreads.com/book/show/38447.The_Handmaid_s_Tale">
+                  The Handmaid's Tale</a> by Margaret Atwood
+                </li>
+                <li>
+                  <a href="https://www.goodreads.com/book/show/17383917-the-screwtape-letters">
+                  The Screwtape Letters</a> by C.S. Lewis
+                </li>
+              </ul>
+            </div>
+            <div class="board-games">
+              <h3>Current Favorite Board Games</h3>
+              <ul>
+                <li>
+                  <a href="https://boardgamegeek.com/boardgame/146508/time-stories">
+                    <img src="../assets/images/time_stories.jpg"
+                         alt="T.I.M.E. Stories board game"
+                         class="game-photo">
+                  </a>
+                  <p>
+                    T.I.M.E. Stories by Manuel Rozoy via Space Cowboys
+                  </p>
+                </li>
+                <li>
+                  <a href="https://boardgamegeek.com/boardgame/96848/mage-knight-board-game">
+                    <img src="../assets/images/mage_knight.jpg"
+                         alt="Mage Knight board game"
+                         class="game-photo">
+                  </a>
+                  <p>
+                    Mage Knight by Vlaada Chvátil via WizKids
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <h1 class="section-heading">Contact Me</h1>
+
+        <p>
+          Send me a message with the form below or
+          email me at <a href="mailto:haleymnatz@gmail.com" id="email-link">haleymnatz@gmail.com</a>.
+        </p>
+      </section>
+
     </main>
 
     <script

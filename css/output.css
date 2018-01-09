@@ -1,4 +1,4 @@
-/* GENERAL */
+/* ----- GENERAL ----- */
 body {
   display: flex;
   height: 100%;
@@ -7,6 +7,9 @@ body {
   width: 100%;
   font-family: "Alegreya Sans", sans-serif; }
 
+a {
+  text-decoration: none; }
+
 .center-text {
   text-align: center; }
 
@@ -14,8 +17,15 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Economica", sans-serif;
   font-weight: initial; }
 
-/* -- TESTING -- */
-/* -- NAVBAR -- */
+section {
+  margin: 20vh auto; }
+
+.section-heading {
+  font-size: 6vh;
+  margin-bottom: 1%; }
+
+/* ----- TESTING ----- */
+/* ----- NAVBAR ----- */
 .nav {
   background-color: #82063c;
   display: flex;
@@ -34,7 +44,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav a {
   color: #fcfcfc;
-  text-decoration: none;
   transition: all .1s ease-in-out;
   display: block; }
 
@@ -52,21 +61,25 @@ ul.nav-links, ul.social-links {
   padding: 0;
   height: 30%; }
 
-/* -- SHARED -- */
+/* ----- SHARED ----- */
 #home, #about,
 #work, #contact {
   width: 80%; }
 
+#home, #about, #contact {
+  height: 100vh; }
+
+#home, #about {
+  display: flex; }
+
 main {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  overflow: scroll;
   padding: 1em;
   width: 95vw; }
 
-/* -- HOME -- */
+/* ----- HOME ----- */
 #home {
-  display: flex; }
+  height: 100vh; }
 
 .right-div,
 .left-div {
@@ -96,14 +109,39 @@ main {
 #home-title {
   font-size: 8vh; }
 
-/* -- WORK -- */
-table {
-  height: 80vh;
-  width: 100%;
+/* ----- WORK ----- */
+#work {
   margin: auto; }
 
-td {
-  padding: 1em; }
+.project-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%; }
+
+.project-box {
+  border: solid 1px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  margin: 5% 0;
+  width: 35vw; }
+
+.project {
+  height: 80%;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  width: 100%; }
+  .project:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: all .3s;
+    -webkit-transition: all .3s; }
 
 .project:hover:after {
   opacity: 1; }
@@ -115,30 +153,17 @@ td {
 .project:hover > .project-photo {
   filter: blur(1px); }
 
-.project {
-  border: solid 1px rgba(0, 0, 0, 0.3);
-  border-radius: 5px;
-  height: 100%;
-  position: relative;
-  z-index: 0; }
-
-.project:after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.6);
-  opacity: 0;
-  transition: all .3s;
-  -webkit-transition: all .3s; }
-
 .project-photo {
+  object-fit: cover;
+  object-position: top;
   opacity: 1;
   transition: .3s ease;
   width: 100%;
-  height: auto; }
+  height: 100%; }
+
+.project-caption {
+  height: 20%;
+  border-top: solid 1px rgba(0, 0, 0, 0.3); }
 
 .project-info {
   color: #fff;
@@ -158,13 +183,15 @@ td {
 .project a {
   color: #fff; }
 
+.project ul {
+  list-style-type: none; }
+
 .project-icons ul {
   align-items: center;
   display: flex;
   flex-direction: column;
   height: 100%;
   justify-content: space-around;
-  list-style-type: none;
   margin: 0;
   padding: 0; }
 
@@ -190,10 +217,75 @@ td {
 .project-text p {
   text-align: justify; }
 
+.project-text ul li {
+  margin: 0.5em;
+  padding-left: 1.0em;
+  position: relative; }
+  .project-text ul li:before {
+    content: '\27a2';
+    left: -1em;
+    position: absolute;
+    top: 0; }
+
 a.project-link {
   display: block;
   height: 100%;
-  text-decoration: none;
   width: 100%; }
+
+@media (max-width: 1000px) {
+  .project-box {
+    width: 70vw; } }
+/* ----- ABOUT ----- */
+#about {
+  flex-direction: column; }
+
+.container {
+  display: flex;
+  flex-direction: row; }
+
+#about .left-div {
+  justify-content: space-around; }
+
+#about .left-div,
+#about .right-div {
+  align-items: baseline; }
+
+.question {
+  width: 90%; }
+
+.books li {
+  margin: 0.5em;
+  padding-left: 1.0em;
+  position: relative; }
+  .books li:before {
+    content: '\27a2';
+    left: -1em;
+    position: absolute;
+    top: 0; }
+  .books li a {
+    color: #82063c; }
+    .books li a:hover {
+      text-decoration: underline; }
+
+.board-games {
+  width: 100%; }
+  .board-games a {
+    width: 40%; }
+  .board-games li {
+    display: flex; }
+  .board-games p {
+    margin: auto 0; }
+  .board-games ul {
+    list-style-type: none; }
+
+img.game-photo {
+  height: 25vh;
+  width: auto; }
+
+/* ----- CONTACT ----- */
+#email-link {
+  color: #82063c; }
+  #email-link:hover {
+    text-decoration: underline; }
 
 /*# sourceMappingURL=output.css.map */

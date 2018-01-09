@@ -39,8 +39,8 @@ function openAbout(){
 
 $(function(){
   // getNav();
-  openContact();
-  openHome();
-  openWork();
-  openAbout();
+  // openContact();
+  // openHome();
+  // openWork();
+  // openAbout();
 });
