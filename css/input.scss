@@ -70,6 +70,21 @@ main {
   width: 95vw;
 }
 
+#site-cover-div.site-cover {
+  background:rgba(0,0,0,0.6);
+  height: 100%;
+  left:0;
+  opacity: 1;
+  position: absolute;
+  top:0;
+  -moz-transition:all 200ms ease-in;
+  -webkit-transition:all 200ms ease-in;
+  -o-transition:all 200ms ease-in;
+  transition:all 200ms ease-in;
+  width: 100%;
+  z-index: 15;
+}
+
 .container {
   display: flex;
   flex-direction: row;
@@ -166,15 +181,8 @@ input[type="checkbox"] {
   display: none;
 }
 
-input[type="checkbox"]:checked ~ .nav-lists {
-  margin: 0;
-}
 
-input[type="checkbox"]:checked ~ label#trigger-label {
-  margin-left: 50vw;
-}
-
-@media (max-width: 720px) {
+@media (max-width: 730px) {
 
   #trigger-label {
     display: block;
@@ -183,6 +191,14 @@ input[type="checkbox"]:checked ~ label#trigger-label {
   label[for="nav-trigger"]:before {
     content: '\f0c9';
     font-family: FontAwesome;
+  }
+
+  input[type="checkbox"]:checked ~ .nav-lists {
+    margin: 0;
+  }
+
+  input[type="checkbox"]:checked ~ label#trigger-label {
+    margin-left: 55vw;
   }
 
   .nav {
@@ -196,18 +212,30 @@ input[type="checkbox"]:checked ~ label#trigger-label {
   }
 
   .nav-lists {
+    background-color: #fdfdfd;
     justify-content: flex-start;
-    margin: 0 0 0 -125px;
+    margin: 0 0 0 -200px;
+    width: 50vw;
   }
 
   ul.nav-links,
   ul.social-links {
+    height: 40%;
     justify-content: space-between;
   }
 
   .nav-links li { margin: 0 10px }
-
   .social-links li { margin: 0 20px; }
+
+  .nav-links li,
+  .social-links li {
+    font-size: 20px;
+  }
+
+  .nav-links a,
+  .social-links i {
+    color: $maroon;
+  }
 }
 
 

@@ -9,6 +9,21 @@ function scrollToId(){
   });
 }
 
+function checkSize () {
+  $('#nav-trigger').click(function() {
+    if ($(window).width() <= 730) {
+      darkenContent();
+    }
+  });
+}
+
+
+function darkenContent() {
+  var checked = $('#nav-trigger').prop('checked');
+  $('#site-cover-div').toggleClass('site-cover', checked);
+}
+
 $(function(){
   scrollToId();
+  checkSize();
 });
