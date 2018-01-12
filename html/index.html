@@ -3,6 +3,7 @@
 <html>
   <head>
     <script src="https://use.fontawesome.com/6dc90e5c63.js"></script>
+    <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Economica" rel="stylesheet">
     <link href="../css/output.css" rel="stylesheet" type="text/css">
     <meta charset="utf-8">
@@ -14,10 +15,10 @@
   <body>
     <nav class="nav">
       <ul class="nav-links">
-        <li><a rel="index" href="#home" id="home-link">Home</a></li>
-        <li><a rel="work" href="#work" id="work-link">My Work</a></li>
-        <li><a rel="about" href="#about" id="about-link">About</a></li>
-        <li><a rel="contact" href="#contact" id="contact-link">Contact</a></li>
+        <li><a rel="index" href="#" id="home-link" class="nav-link" data-attr="home">Home</a></li>
+        <li><a rel="work" href="#" id="work-link" class="nav-link" data-attr="work">My Work</a></li>
+        <li><a rel="about" href="#" id="about-link" class="nav-link" data-attr="about">About</a></li>
+        <li><a rel="contact" href="#" id="contact-link" class="nav-link" data-attr="contact">Contact</a></li>
       </ul>
       <ul class="social-links">
         <li><a rel="linkedin" href="https://www.linkedin.com/in/haleymnatzaganian/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
@@ -30,9 +31,10 @@
 
     <main>
       <section id="home">
-        <div class="left-div">
-          <h1 id="home-name">Haley Mnatzaganian</h1>
-          <h2 id="home-title">Software Engineer</h2>
+        <div class="container">
+          <div class="left-div">
+          <h1 id="home-name" class="center-text">Haley Mnatzaganian</h1>
+          <h2 id="home-title" class="center-text">Software Engineer</h2>
           <p>
             Read all these words about how awesome I am so you will hire me!
           </p>
@@ -42,58 +44,70 @@
           <div>
 
           </div>
-        </div>
-        <div class="right-div">
-          <img src="../assets/images/self.jpg" alt="Photo of Haley Mnatzaganian"
-            id="home-photo">
+          </div>
+          <div class="right-div">
+            <img src="../assets/images/self.jpg" alt="Photo of Haley Mnatzaganian"
+              id="home-photo">
+          </div>
         </div>
       </section>
+
       <section id="work">
         <h1 class="section-heading">My Work</h1>
-        <div class="project-boxes">
+        <div class="container">
           <!-- VEGME -->
           <div class="project-box">
             <div class="project">
-                <img src="../assets/images/vegme_screenshot.png"
+              <img src="../assets/images/vegme_screenshot.png"
                      alt="Screenshot of Vegme app"
                      class="project-photo"/>
-                <div class="project-info">
-                  <div class="project-icons">
-                    <ul>
-                      <li class="logo-li">
-                        <object type="image/svg+xml"
-                          data="../assets/images/rails-svg.svg"
-                          class="logo-svg">
-                        </object>
-                      </li>
-                      <li>
-                        <a href="https://github.com/space-jammers/vegme">
-                          <i class="fa fa-github fa-lg"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                  <a href="http://vegme.herokuapp.com/" class="project-link">
-                    <div class="project-text">
-                      <h2>Accomplishments</h2>
-                      <ul>
-                        <li>
-                          Edamam API Integration
-                        </li>
-                        <li>
-                          Data-transer object for JSON parsing
-                        </li>
-                        <li>
-                          Setup admin role \& hidden admin features
-                        </li>
-                        <li>
-                          Tests for implemented functionality
-                        </li>
-                      </ul>
-                    </div>
-                  </a>
+              <div class="project-info">
+                <div class="project-icons">
+                  <ul>
+                    <li class="logo-li">
+                      <object type="image/svg+xml"
+                        data="../assets/images/rails-svg.svg"
+                        class="logo-svg">
+                      </object>
+                    </li>
+                    <li>
+                      A
+                    </li>
+                  </ul>
+                </div>
+                <div class="project-text">
+                  <h2>Accomplishments</h2>
+                  <ul>
+                    <li>
+                      Edamam API Integration
+                    </li>
+                    <li>
+                      Data-transer object for JSON parsing
+                    </li>
+                    <li>
+                      Setup admin role & hidden admin features
+                    </li>
+                    <li>
+                      Tests for implemented functionality
+                    </li>
+                  </ul>
+                </div>
+                <div class="side-links">
+                  <ul>
+                    <li>
+                      <a href="http://vegme.herokuapp.com/" class="" target="_blank">
+                        <i class="fa fa-external-link fa-lg"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://github.com/space-jammers/vegme"
+                         target="_blank">
+                        <i class="fa fa-github fa-lg"></i>
+                      </a>
+                    </li>
                 </div>
               </div>
+            </div>
             <div class="project-caption">
               <h3>VegMe</h3>
               <p>
@@ -119,37 +133,47 @@
                       </object>
                     </li>
                     <li>
-                      <a href="https://github.com/counterThreat/chess_app">
+
+                    </li>
+                  </ul>
+                </div>
+                <div class="project-text">
+                  <h2>Accomplishments</h2>
+                  <ul>
+                    <li>
+                      Logic to determine move obstruction
+                    </li>
+                    <li>
+                      Logic for check, checkmate & stalemate
+                    </li>
+                    <li>
+                      Pusher integration for realtime live updating
+                    </li>
+                    <li>
+                      Single-table inheritance for piece classes
+                    </li>
+                    <li>
+                      Logic for general Piece class as well as several specific pieces
+                    </li>
+                    <li>
+                      Tests for implemented functionality
+                    </li>
+                  </ul>
+                </div>
+                <div class="side-links">
+                  <ul>
+                    <li>
+                      <a href="https://firehose-chess-app.herokuapp.com/" target="_blank">
+                        <i class="fa fa-external-link fa-lg"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://github.com/counterThreat/chess_app" target="_blank">
                         <i class="fa fa-github fa-lg"></i>
                       </a>
                     </li>
                   </ul>
                 </div>
-                <a href="https://firehose-chess-app.herokuapp.com/" class="project-link">
-                  <div class="project-text">
-                    <h2>Accomplishments</h2>
-                    <ul>
-                      <li>
-                        Logic to determine move obstruction
-                      </li>
-                      <li>
-                        Logic for check, checkmate \& stalemate
-                      </li>
-                      <li>
-                        Pusher integration for realtime live updating
-                      </li>
-                      <li>
-                        Single-table inheritance for piece classes
-                      </li>
-                      <li>
-                        Logic for general Piece class as well as several specific pieces
-                      </li>
-                      <li>
-                        Tests for implemented functionality
-                      </li>
-                    </ul>
-                  </div>
-                </a>
               </div>
             </div>
             <div class="project-caption">
@@ -176,30 +200,40 @@
                       </object>
                     </li>
                     <li>
-                      <a href="https://github.com/julianguyen/ifme">
+
+                    </li>
+                  </ul>
+                </div>
+                <div class="project-text">
+                  <h2>Accomplishments</h2>
+                  <ul>
+                    <li>
+                      Custom devise_invitable solution to show the name
+                      of invitation sender in invitation email subject line
+                    </li>
+                    <li>
+                      Custom devise_invitable solution to accept a comma-separated
+                      list of email addresses to invite multiple people by email
+                    </li>
+                    <li>
+                      Tests for implemented functionality
+                    </li>
+                  </ul>
+                </div>
+                <div class="side-links">
+                  <ul>
+                    <li>
+                      <a href="https://www.if-me.org/" target="_blank">
+                        <i class="fa fa-external-link fa-lg"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://github.com/julianguyen/ifme" target="_blank">
                         <i class="fa fa-github fa-lg"></i>
                       </a>
                     </li>
                   </ul>
                 </div>
-                <a href="https://www.if-me.org/" class="project-link">
-                  <div class="project-text">
-                    <h2>Accomplishments</h2>
-                    <ul>
-                      <li>
-                        Custom devise_invitable solution to show the name
-                        of invitation sender in invitation email subject line
-                      </li>
-                      <li>
-                        Custom devise_invitable solution to accept a comma-separated
-                        list of email addresses to invite multiple people by email
-                      </li>
-                      <li>
-                        Tests for implemented functionality
-                      </li>
-                    </ul>
-                  </div>
-                </a>
               </div>
             </div>
             <div class="project-caption">
@@ -226,26 +260,36 @@
                       </object>
                     </li>
                     <li>
-                      <a href="https://github.com/haleymnatz/madlib-emailer">
+
+                    </li>
+                  </ul>
+                </div>
+                <div class="project-text">
+                  <h2>Accomplishments</h2>
+                  <ul>
+                    <li>
+                      First Java app built using Spring MVC, Tomcat, and Maven
+                    </li>
+                    <li>
+                      String formatting to incorporate user inputs into instances
+                      of stories
+                    </li>
+                  </ul>
+                </div>
+                <div class="side-links">
+                  <ul>
+                    <li>
+                      <a href="https://happylibs.herokuapp.com/" target="_blank">
+                        <i class="fa fa-external-link fa-lg"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://github.com/haleymnatz/madlib-emailer" target="_blank">
                         <i class="fa fa-github fa-lg"></i>
                       </a>
                     </li>
                   </ul>
                 </div>
-                <a href="https://happylibs.herokuapp.com/" class="project-link">
-                  <div class="project-text">
-                    <h2>Accomplishments</h2>
-                    <ul>
-                      <li>
-                        First Java app built using Spring MVC, Tomcat, and Maven
-                      </li>
-                      <li>
-                        String formatting to incorporate user inputs into instances
-                        of stories
-                      </li>
-                    </ul>
-                  </div>
-                </a>
               </div>
             </div>
             <div class="project-caption">
@@ -265,18 +309,28 @@
             <h2>Q&A With Yours Truly</h2>
             <p class="question">
               <b>Q: You have a degree in neuroscience? What does that have to do with software?</b><br /><br />
-              <b>A:</b> My devotion to finding a career where I could
-              serve others led to my pursuing a career in medicine
-              via a neuroscience degree. My education in a field that
-              was constantly changing and where questions rarely had
-              one clear answer cultivated my ability to think critically
-              and innovatively. As a developer, I use these skills to create
-              optimized solutions while keeping the customer in mind in
-              a field that is ever-evolving.
+              <b>A:</b> I pursued a degree in neuroscience with
+              the intention of serving others through medicine.
+              After discovering my love for programming, I realized
+              this career path offers the same opportunities to
+              serve people, with the added bonus of getting to
+              troubleshoot highly varied, complex issues. I love
+              getting to use my science background, which taught
+              me how to create innovative solutions in a rapidly
+              evolving field with few clear answers, to serve my
+              clients.
             </p>
             <p class="question">
               <b>Q: What do you have to offer that other developers don't?</b><br /><br />
-              <b>A:</b>
+              <b>A:</b>I know how to ask the right questions for
+              the situation – whether I'm finding the source of a
+              bug, researching how to use a new technology, or
+              designing the architecture of a new project. These
+              skills combined with my love for people empower me
+              to communicate well both internally and externally
+              to construct solutions that not only satisfy clients,
+              but excite them. Not to mention, I make a mean peanut
+              butter cup cheesecake.
             </p>
             <p class="question">
               <b>Q: So, what's next?</b><br /><br />
@@ -288,21 +342,31 @@
               Ultimately, I want to contribute to meaningful products
               that make the world better.
             </p>
+            <a href="https://1drv.ms/b/s!Ao4hFhZi6bZ3sBYE51Ze0Vhb9Se0"
+               id="resume-link"
+               target="_blank">
+              See My Resume
+            </a>
           </div>
           <div class="right-div">
+            <p class="question">
+              <b>Q: What do you like to do when you're not programming?</b><br /><br />
+              <b>A:</b> You can usually find me cooking a new recipe, hiking,
+              reading, or playing board games with friends.
+            </p>
             <div class="books">
               <h3>Favorite Books of 2017</h3>
               <ul>
                 <li>
-                  <a href="https://www.goodreads.com/book/show/18302455-the-circle">
+                  <a href="https://www.goodreads.com/book/show/18302455-the-circle" target="_blank">
                     The Circle</a> by Dave Eggers
                 </li>
                 <li>
-                  <a href="https://www.goodreads.com/book/show/38447.The_Handmaid_s_Tale">
+                  <a href="https://www.goodreads.com/book/show/38447.The_Handmaid_s_Tale" target="_blank">
                   The Handmaid's Tale</a> by Margaret Atwood
                 </li>
                 <li>
-                  <a href="https://www.goodreads.com/book/show/17383917-the-screwtape-letters">
+                  <a href="https://www.goodreads.com/book/show/17383917-the-screwtape-letters" target="_blank">
                   The Screwtape Letters</a> by C.S. Lewis
                 </li>
               </ul>
@@ -311,23 +375,23 @@
               <h3>Current Favorite Board Games</h3>
               <ul>
                 <li>
-                  <a href="https://boardgamegeek.com/boardgame/146508/time-stories">
+                  <a href="https://boardgamegeek.com/boardgame/146508/time-stories" target="_blank">
                     <img src="../assets/images/time_stories.jpg"
                          alt="T.I.M.E. Stories board game"
                          class="game-photo">
                   </a>
                   <p>
-                    T.I.M.E. Stories by Manuel Rozoy via Space Cowboys
+                    T.I.M.E. Stories by Manuel Rozoy (Space Cowboys)
                   </p>
                 </li>
                 <li>
-                  <a href="https://boardgamegeek.com/boardgame/96848/mage-knight-board-game">
+                  <a href="https://boardgamegeek.com/boardgame/96848/mage-knight-board-game" target="_blank">
                     <img src="../assets/images/mage_knight.jpg"
                          alt="Mage Knight board game"
                          class="game-photo">
                   </a>
                   <p>
-                    Mage Knight by Vlaada Chvátil via WizKids
+                    Mage Knight by Vlaada Chvátil (WizKids)
                   </p>
                 </li>
               </ul>
@@ -335,13 +399,15 @@
           </div>
         </div>
       </section>
+
       <section id="contact">
         <h1 class="section-heading">Contact Me</h1>
-
-        <p>
-          Send me a message with the form below or
-          email me at <a href="mailto:haleymnatz@gmail.com" id="email-link">haleymnatz@gmail.com</a>.
-        </p>
+        <div class="container">
+          <p>
+            Send me a message with the form below or
+            email me at <a href="mailto:haleymnatz@gmail.com" id="email-link">haleymnatz@gmail.com</a>.
+          </p>
+        </div>
       </section>
 
     </main>
@@ -350,6 +416,6 @@
 			  src="https://code.jquery.com/jquery-3.2.1.min.js"
 			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 			  crossorigin="anonymous"></script>
-    <script src="../js/scripts.js"></script>
+    <script src="../js/scripts.js" type="text/javascript"></script>
   </body>
 </html>
