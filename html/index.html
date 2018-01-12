@@ -14,19 +14,23 @@
 
   <body>
     <nav class="nav">
-      <ul class="nav-links">
-        <li><a rel="index" href="#" id="home-link" class="nav-link" data-attr="home">Home</a></li>
-        <li><a rel="work" href="#" id="work-link" class="nav-link" data-attr="work">My Work</a></li>
-        <li><a rel="about" href="#" id="about-link" class="nav-link" data-attr="about">About</a></li>
-        <li><a rel="contact" href="#" id="contact-link" class="nav-link" data-attr="contact">Contact</a></li>
-      </ul>
-      <ul class="social-links">
-        <li><a rel="linkedin" href="https://www.linkedin.com/in/haleymnatzaganian/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-        <li><a rel="github" href="https://github.com/haleymnatz" target="_blank"><i class="fa fa-github"></i></a></li>
-        <li><a rel="medium" href="https://medium.com/@haleymnatz" target="_blank"><i class="fa fa-medium"></i></a></li>
-        <li><a rel="twitter" href="https://twitter.com/haleymnatz" target="_blank"><i class="fa fa-twitter"></i></a></li>
-        <li><a rel="googleplus" href="https://plus.google.com/u/0/103955336511157679504" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-      </ul>
+      <input type="checkbox" id="nav-trigger" />
+      <label for="nav-trigger" id="trigger-label"></label>
+      <div class="nav-lists">
+        <ul class="nav-links">
+          <li><a rel="index" href="#" id="home-link" class="nav-link" data-attr="home">Home</a></li>
+          <li><a rel="work" href="#" id="work-link" class="nav-link" data-attr="work">My Work</a></li>
+          <li><a rel="about" href="#" id="about-link" class="nav-link" data-attr="about">About</a></li>
+          <li><a rel="contact" href="#" id="contact-link" class="nav-link" data-attr="contact">Contact</a></li>
+        </ul>
+        <ul class="social-links">
+          <li><a rel="linkedin" href="https://www.linkedin.com/in/haleymnatzaganian/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+          <li><a rel="github" href="https://github.com/haleymnatz" target="_blank"><i class="fa fa-github"></i></a></li>
+          <li><a rel="medium" href="https://medium.com/@haleymnatz" target="_blank"><i class="fa fa-medium"></i></a></li>
+          <li><a rel="twitter" href="https://twitter.com/haleymnatz" target="_blank"><i class="fa fa-twitter"></i></a></li>
+          <li><a rel="googleplus" href="https://plus.google.com/u/0/103955336511157679504" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+        </ul>
+      </div>
     </nav>
 
     <main>
@@ -109,7 +113,10 @@
               </div>
             </div>
             <div class="project-caption">
-              <h3>VegMe</h3>
+              <div class="caption-top">
+                <h3>VegMe</h3>
+                <i class="fa fa-ellipsis-v"></i>
+              </div>
               <p>
                 A plant-based recipe search engine built using TDD and
                 a third party API.
@@ -177,13 +184,17 @@
               </div>
             </div>
             <div class="project-caption">
-              <h3>Counter Threat</h3>
+              <div class="caption-top">
+                <h3>Counter Threat</h3>
+                <i class="fa fa-ellipsis-v"></i>
+              </div>
               <p>
                 A fully-functional, live-updating chess game application built
                 using TDD and Pusher.
               </p>
             </div>
           </div>
+
           <!-- IFME -->
           <div class="project-box">
             <div class="project">
@@ -237,13 +248,17 @@
               </div>
             </div>
             <div class="project-caption">
-              <h3>ifme</h3>
+              <div class="caption-top">
+                <h3>ifme</h3>
+                <i class="fa fa-ellipsis-v"></i>
+              </div>
               <p>
                 Open source app to share mental health experiences
                 with loved ones.
               </p>
             </div>
           </div>
+
           <!-- HAPPYLIBS -->
           <div class="project-box">
             <div class="project">
@@ -293,7 +308,10 @@
               </div>
             </div>
             <div class="project-caption">
-              <h3>HappyLibs!</h3>
+              <div class="caption-top">
+                <h3>HappyLibs!</h3>
+                <i class="fa fa-ellipsis-v"></i>
+              </div>
               <p>
                 A simple MadLibs&#x2122 replica built using Spring MVC and Maven.
               </p>
@@ -322,7 +340,7 @@
             </p>
             <p class="question">
               <b>Q: What do you have to offer that other developers don't?</b><br /><br />
-              <b>A:</b>I know how to ask the right questions for
+              <b>A:</b> I know how to ask the right questions for
               the situation – whether I'm finding the source of a
               bug, researching how to use a new technology, or
               designing the architecture of a new project. These
